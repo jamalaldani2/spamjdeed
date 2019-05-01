@@ -32,7 +32,7 @@ client.on('ready', () => {//Toxic Codes
 const prefix = "1";
 
 client.on("ready", () => {
-let channel = client.channels.get("530751392168804375")
+let channel = client.channels.get("573192829472604177")
 setInterval(function() {
 channel.send(`I NEED CREDITS NOW`);
 }, 999)
