@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 const spam2 = new Discord.Client();
 const spam4 = new Discord.Client();
 
-client.on('ready', () => {//Toxic Codes
+client.on('ready', () => {//Toxic Codesa
     console.log(`Logged in as ${client.user.tag} !`);//Toxic Codes
           client.user.setActivity("by n3k4a|Premiumbot|Toxic Codes  .",{type: 'WATCHING'});//Toxic Codes
   //Toxic Codes
@@ -59,3 +59,5 @@ client.on('message', message => {
 });
 
 client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN2);
+client.login(process.env.BOT_TOKEN3);
