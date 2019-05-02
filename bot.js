@@ -18,7 +18,6 @@ client.on('ready', () => {//Toxic Codes
   });//Toxic Codes
 
 
-  });//Toxic Codes
 
 
 
