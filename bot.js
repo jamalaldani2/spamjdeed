@@ -2,8 +2,7 @@ console.log("BOT ONLINE");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client();
-  //Toxic Codes
-  });//Toxic Codes
+ 
 bot.on('ready', () => {//Toxic Codes
     console.log(` !`);//Toxic Codes
           bot.user.setActivity("by n3k4a|Premiumbot|Toxic Codes  .",{type: 'WATCHING'});//Toxic Codes
