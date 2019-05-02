@@ -56,6 +56,33 @@ client.on('message', message => {
 
 });
 
+bot.on("ready", () => {
+let channel = bot.channels.get("573192829472604177")
+setInterval(function() {
+channel.send(`I NEED CREDITS NOW`);
+}, 999)
+})
+
+bot.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+  if (command === "say") { /// اكتب البرفيكس ثم الامر
+          message.delete()
+    message.channel.sendMessage(args.join(" ")).catch(console.error);
+  }
+
+
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
 bot.login(process.env.BOT_TOKEN2);
 client.login(process.env.BOT_TOKEN3);
